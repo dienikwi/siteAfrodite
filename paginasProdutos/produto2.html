@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title> Compre online </title>
+    <link href="../css/estiloPaginaProduto.css" rel="stylesheet" />
+    <link href="../css/estilo.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="../arq.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="centro">
+            <div id="logo"> <img src="../images/logo.png" /> </div>
+            <nav class="menu">
+                <a class="link" href="../index.html">Sobre nós</a>
+                <a class="link" href="../info.html">Informações</a>
+                <a class="link" href="../produtos.html">Produtos</a>
+                <a class="link" href="../trabalhe.html">Trabalhe conosco</a>
+            </nav>
+        </div>
+    </header>
+    <div class="centro">
+        <div class="fotosProduto">
+            <div class="conjuntoFotosPequenas">
+                <img class="fotoPequena" src="../images/produtos/2principal.png" onmouseover="mudaOpacidade(0)" onmouseout="resetaOpacidade(0)" onclick="mudaFotoPrincipal('../images/produtos/2principal.png')"/>
+                <img class="fotoPequena" src="../images/produtos/2secundaria.png" onmouseover="mudaOpacidade(1)" onmouseout="resetaOpacidade(1)" onclick="mudaFotoPrincipal('../images/produtos/2secundaria.png')"/>
+            </div> <!--conjuntoFotosPequenas-->
+            <img id="destaque" src="../images/produtos/2principal.png"/>
+            <div id="infoProduto">
+                <h1> Blusa multicolor com listras feminina </h1>
+                <h3> <span>por</span> R$ 49,99 </h3>
+                <span> em até 3x sem juros</span>
+                <hr>
+                <ul>
+                    <p id="descricao"> Descrição do produto </p>
+                    <li> <span> Gênero: Feminino </span> </li>
+                    <li> <span> Cor: Listrada </span> </li>
+                    <li> <span> Material: Algodão </span> </li>
+                    <li> <span> Campanha: Primavera 2022 </span> </li>
+                </ul>
+                <button onclick="alertaComprar()"> Comprar </button>
+            </div><!--infoProduto-->
+        </div><!--fotosProduto-->
+    </div> <!-- centro -->
+</body>
+
+</html>

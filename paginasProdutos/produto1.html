@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title> Compre online </title>
+    <link href="../css/estiloPaginaProduto.css" rel="stylesheet" />
+    <link href="../css/estilo.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="../arq.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="centro">
+            <div id="logo"> <img src="../images/logo.png" /> </div>
+            <nav class="menu">
+                <a class="link" href="../index.html">Sobre nós</a>
+                <a class="link" href="../info.html">Informações</a>
+                <a class="link" href="../produtos.html">Produtos</a>
+                <a class="link" href="../trabalhe.html">Trabalhe conosco</a>
+            </nav>
+        </div>
+    </header>
+    <div class="centro">
+        <div class="fotosProduto">
+            <div class="conjuntoFotosPequenas">
+                <img class="fotoPequena" src="../images/produtos/1principal.png" onmouseover="mudaOpacidade(0)" onmouseout="resetaOpacidade(0)" onclick="mudaFotoPrincipal('../images/produtos/1principal.png')"/>
+                <img class="fotoPequena" src="../images/produtos/1secundaria.png" onmouseover="mudaOpacidade(1)" onmouseout="resetaOpacidade(1)" onclick="mudaFotoPrincipal('../images/produtos/1secundaria.png')"/>
+            </div> <!--conjuntoFotosPequenas-->
+            <img id="destaque" src="../images/produtos/1principal.png"/>
+            <div id="infoProduto">
+                <h1> Blusa com estampa Wonder Woman feminina </h1>
+                <h3> <span>por</span> R$ 50,00 </h3>
+                <span> em até 3x sem juros</span>
+                <hr>
+                <ul>
+                    <p id="descricao"> Descrição do produto </p>
+                    <li> <span> Gênero: Feminino </span> </li>
+                    <li> <span> Cor: Cinza </span> </li>
+                    <li> <span> Material: Viscose </span> </li>
+                    <li> <span> Campanha: Verão 2022 </span> </li>
+                </ul>
+                <button onclick="alertaComprar()"> Comprar </button>
+            </div><!--infoProduto-->
+        </div><!--fotosProduto-->
+    </div> <!-- centro -->
+</body>
+
+</html>

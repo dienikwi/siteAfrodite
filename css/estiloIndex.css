@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    overflow-y: hidden; /* não cria barra de rolagem vertical */
+    overflow-x: hidden; /* não cria barra de rolagem horizontal */
+}
+
+section.sobre {
+    height: calc(100% - 10rem);
+    position: relative;
+}
+
+#sobreDetalhes {
+    position: absolute;
+    bottom: -28rem;
+    right: 60%;
+    width: 70rem;
+    height: 70rem;
+    border-radius: 50%; /* transforma em circulo */
+    background-color: #BC317D;
+}
+
+#avatar {
+    position: absolute;
+    left: 65%;
+    height: 50%;
+    bottom: 50%;
+}
+
+#redesSociais {
+    position: absolute;
+    top: 18rem;
+    left: 2rem;
+}
+
+#redesSociais img {
+    display: block; /* deixa uma imagem abaixo da outra */
+    width: 2rem;
+    margin: 1rem 0;
+}
+
+#textoSobre {
+    position: relative;
+    width: 45%;
+    margin-top: 5%;
+    text-align: center;
+    left: 50%;
+}
+
+#textoSobre h1 {
+    font-size: 2rem;
+}
+
+#textoSobre p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+#textoSobre audio {
+    margin-top: 5%;
+}
+
+@media (max-width: 800px) { /* para formatação de mobile */
+    #sobreDetalhes {
+        display: none; /* esconde o circulo, avatar e icones */
+    }
+    html, body {
+        overflow-y: scroll; /* cria novamente a barra de rolagem vertical */
+        overflow-x: scroll; /* cria novamente a barra de rolagem horizontal */
+    }
+    #textoSobre {
+        width: 100%; /* volta para o meio da página */
+        margin: 5%;
+        left: 0; /* limpa a formatação anterior */
+    }
+}

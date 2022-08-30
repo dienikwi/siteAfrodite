@@ -1,0 +1,33 @@
+#centroProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+#centroProduto a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.card img{
+    width: 15rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.212);
+    border-radius: 10px;
+    margin: 0 5rem 2rem;
+}
+
+.card p {
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.card:hover {
+    color: #ffffff;
+    background-color: #BC317D;
+}
