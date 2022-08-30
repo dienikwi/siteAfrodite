@@ -72,4 +72,14 @@ section.sobre {
         margin: 5%;
         left: 0; /* limpa a formatação anterior */
     }
+    
+@media (max-height: 630px) {
+    #avatar {
+        bottom: 35%;
+        height: 40%;
+    }
+    #redesSociais {
+        top: 15rem;
+    }
+}
 }
