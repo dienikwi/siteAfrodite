@@ -5,7 +5,7 @@
     <link href="css/estiloTrabalhe.css" rel="stylesheet" />
     <link href="css/estilo.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <script type="text/javascript" src="arq.js">
+    <script type="text/javascript" src="js/arq.js">
     </script>
 </head>
 
@@ -22,70 +22,70 @@
         </div>
     </header>
     <div class="centro" id="centroTrabalhe">
-        <div class="form">
-            <form action="" onsubmit="enviarForm()">
+        <form action="" onsubmit="enviarForm()">
+            <div class="form-header">
+                <div class="titulo">
+                    <h1> Trabalhe conosco </h1>
+                </div><!-- titulo -->
+            </div> <!-- form-header -->
 
-                <div class="form-header">
-                    <div class="titulo">
-                        <h1> Trabalhe conosco </h1>
-                    </div><!-- titulo -->
-                </div> <!-- form-header -->
+            <div class="todosInputs">
+                <div class="inputBox">
+                    <label for="nome"> Nome: </label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required="required"
+                        onkeyup="maiuscula(this)">
+                </div> <!-- inputBox -->
 
-                <div class="todosInputs">
-                    <div class="inputBox">
-                        <label for="nome"> Nome: </label>
-                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required="required" onkeyup="maiuscula(this)">
-                    </div> <!-- inputBox -->
+                <div class="inputBox">
+                    <label for="email"> Email: </label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu email" required="required"
+                        onkeyup="maiuscula(this)">
+                </div> <!-- inputBox -->
 
-                    <div class="inputBox">
-                        <label for="email"> Email: </label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu email" required="required" onkeyup="maiuscula(this)">
-                    </div> <!-- inputBox -->
+                <div class="inputBox">
+                    <label for="tel"> Telefone: </label>
+                    <input id="tel" type="tel" name="tel" placeholder="(xx) xxxx-xxxxx" required="required">
+                </div> <!-- inputBox -->
 
-                    <div class="inputBox">
-                        <label for="tel"> Telefone: </label>
-                        <input id="tel" type="tel" name="tel" placeholder="(xx) xxxx-xxxxx" required="required">
-                    </div> <!-- inputBox -->
+                <div class="inputBox">
+                    <label for="nascimento"> Data de nascimento: </label>
+                    <input id="nascimento" type="date" name="nascimento" required="required">
+                </div> <!-- inputBox -->
 
-                    <div class="inputBox">
-                        <label for="nascimento"> Data de nascimento: </label>
-                        <input id="nascimento" type="date" name="nascimento" required="required">
-                    </div> <!-- inputBox -->
+                <div class="inputBox">
+                    <label for="foto"> Envie sua foto: </label>
+                    <input id="foto" type="file" name="foto">
+                </div> <!-- inputBox -->
 
-                    <div class="inputBox">
-                        <label for="foto"> Envie sua foto: </label>
-                        <input id="foto" type="file" name="foto">
-                    </div> <!-- inputBox -->
+                <div class="inputBox">
+                    <label for="sobreVoce">Fale sobre você:</label>
+                    <textarea id="sobreVoce" name="sobreVoce" rows="5" cols="33"
+                        onblur="descricaoTextArea()"> </textarea>
+                </div> <!-- inputBox -->
 
-                    <div class="inputBox">
-                        <label for="sobreVoce">Fale sobre você:</label>
-                        <textarea id="sobreVoce" name="sobreVoce" rows="5" cols="33" onblur="descricaoTextArea()"> </textarea>
-                    </div> <!-- inputBox -->
+                <div class="inputBox">
+                    <label id="tituloGenero" for="genero">Gênero:</label>
+                    <div class="inputGenero">
+                        <input type="radio" id="feminino" name="genero">
+                        <label for="feminino">Feminino</label>
+                    </div><!-- inputGenero -->
 
-                    <div class="inputBox">
-                        <label id="tituloGenero" for="genero">Gênero:</label>
-                        <div class="inputGenero">
-                            <input type="radio" id="feminino" name="genero">
-                            <label for="feminino">Feminino</label>
-                        </div><!-- inputGenero -->
-    
-                        <div class="inputGenero">
-                            <input type="radio" id="masculino" name="genero">
-                            <label for="masculino">Masculino</label>
-                        </div><!-- inputGenero -->
-    
-                        <div class="inputGenero">
-                            <input type="radio" id="nenhum" name="genero">
-                            <label for="nenhum">Prefiro não dizer</label>
-                        </div><!-- inputGenero -->
-                    </div> <!-- inputBox -->
-                </div> <!-- todosInputs -->
+                    <div class="inputGenero">
+                        <input type="radio" id="masculino" name="genero">
+                        <label for="masculino">Masculino</label>
+                    </div><!-- inputGenero -->
 
-                <div class="botaoEnviar">
-                    <input type="submit" value = "Enviar">
-                </div> <!-- botaoEnviar -->
-            </form>
-        </div><!-- form -->
+                    <div class="inputGenero">
+                        <input type="radio" id="nenhum" name="genero">
+                        <label for="nenhum">Prefiro não dizer</label>
+                    </div><!-- inputGenero -->
+                </div> <!-- inputBox -->
+            </div> <!-- todosInputs -->
+
+            <div class="botaoEnviar">
+                <input type="submit" value="Enviar">
+            </div> <!-- botaoEnviar -->
+        </form>
     </div> <!-- centro -->
 </body>
 

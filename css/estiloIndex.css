@@ -59,7 +59,7 @@ section.sobre {
     margin-top: 5%;
 }
 
-@media (max-width: 800px) { /* para formatação de mobile */
+@media (max-width: 1000px) { /* para formatação de mobile */
     #sobreDetalhes {
         display: none; /* esconde o circulo, avatar e icones */
     }

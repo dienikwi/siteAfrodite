@@ -92,3 +92,42 @@ button:hover {
     background-color: #da539d;
     color: #BC317D;
 }
+
+@media (max-width: 1000px) { /* para formatação de mobile */
+    .fotosProduto {
+        padding: 2rem;
+    }
+    .conjuntoFotosPequenas {
+        margin-left: auto;
+        width: 20%;
+    }
+    #infoProduto {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    
+    #destaque { /* deixa foto grande */
+        margin-right: auto;
+        padding: 1%;
+        width: 40%;
+    }
+
+    #infoProduto h1 {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 750px) { /* para formatação de mobile */
+    .fotosProduto {
+        padding: 2rem;
+    }
+    .conjuntoFotosPequenas {
+        width: 20%;
+    }
+    
+    #destaque { /* deixa foto grande */
+        padding: 1%;
+        width: 60%;
+    }
+}
