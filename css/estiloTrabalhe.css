@@ -2,10 +2,14 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
 }
+
 form {
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
+    width: 100%;
     margin-bottom: 5%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212); /* sombra ao redor do box */
 }
@@ -43,15 +47,23 @@ h1 {
 .inputBox input { /* personaliza os inputs */
     padding: 0.8rem 1.3rem;
     border: none;
+    outline: 1px solid #00000017;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
+    box-shadow: 1px 1px 6px #00000031;
+    transition: all ease 0.5s;
+}
+
+textarea {
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00000031;
 }
 
 .inputBox input:hover { /* muda o fundo quando passa o mouse */
-    background-color: #d4d4d41c;
+    background-color: #d4d4d40e;
 }
 
 .inputBox input:focus-visible { /* muda cor da borda quando clica */
+    border-radius: 10px;
     outline: 1px solid #BC317D;
 }
 
@@ -71,6 +83,7 @@ textarea{
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
+    transition: all ease 0.5s;
 }
 
 textarea:focus-visible{
@@ -97,8 +110,20 @@ textarea:focus-visible{
     cursor: pointer;
     color: white;
     font-weight: bold;
+    transition: all ease 0.5s;
 }
+
 .botaoEnviar input:hover {
     background-color: #da539d;
     color: #BC317D;
+}
+
+@media (max-width: 700px) {
+    #centroTrabalhe{
+        width: 100%;
+    }
+
+    .inputBox input{ /* cria espaçamento */
+        margin-top: 0.5rem;
+    }
 }

@@ -16,9 +16,8 @@
 }
 
 header {
-    height: 200px;
-    padding: 20px 0;
-
+    padding: 20px 10px;
+    margin-bottom: 20px;
 }
 
 #logo {
@@ -37,6 +36,7 @@ header {
     font-weight: bold;
     margin: 10px 10px;
 	position: relative;
+    font-size: 1rem;
 }
 
 .link:hover {
